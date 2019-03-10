@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Test form</title>
+</head>
+<body>
+    <form action="#" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Создание резюме</legend>
+            <p>
+                <label for="file">Загрузить из файла</label>
+                    <input id="file" type="file" accept=".docx">
+                <!--<label for="button">Заказать тезюме</label>-->
+                <a href="https://spb.hh.ru/article/expert_resume?from=resume_creation"><input id="button" type="button" value="Заказать резюме"></a>
+            </p>
+            <p>
+                <strong><h2>Контактные данные</h2></strong>
+            </p>
+            <p>
+                <label for="name">Имя:</label>
+                    <input id="name" type="text" placeholder="Иван" required>
+            </p>
+            <p>
+                <label for="fio">Фамилия:</label>
+                    <input id="fio" type="text" placeholder="Иванов" required>
+            </p>
+            <p>
+                <label for="tel">Телефон:</label>
+                <input id="tel" type="tel" placeholder="+79509998877" required>
+            </p>
+            <p>
+                <label for="email">E-mail</label>
+                <input id="email" type="email" placeholder="exampl@exampl.com" required
+                >
+            </p>
+            <p>
+                <label for="siti">Город проживания:</label>
+                <select id="siti" name="select" size="1" required>
+                    <optgroup label="Москва и МО">
+                        <option>Москва</option>
+                        <option>Ашукино</option>
+                        <option>Белоозерскре</option>
+                        <option>Быкаво</option>
+                    </optgroup>
+                    <optgroup label="Санкт-Петербург и ЛО">
+                        <option selected>Санкт-Петербург</option>
+                        <option>Агалатово</option>
+                        <option>Аннино</option>
+                        <option>Бегуницы</option>
+                    </optgroup>
+                </select>
+            </p>
+            <p>
+                <label fot="metro">Станция метро:</label>
+                    <select id="metro" name="select">
+                        <option>Девяткино</option>
+                        <option>Выборгская</option>
+                        <option selected>Горьковская</option>
+                        <option>Петроградская</option>
+                        <option>Просвещения</option>
+                    </select>
+            </p>
+            <p>
+                <strong><h2>Оснавная информация</h2></strong>
+            </p>
+            <label for="birthday">Дата рождения:</label>
+            <input id="birthday" type="date">
+            <p>
+                Пол: <label><input name="pol" type="radio" required>Мужской</label>
+                <label><input name="pol" type="radio" required>Женский</label>
+
+            </p>
+            <p>
+                <label for="nat">Гражданство</label>
+                <select id="nat" name="select">
+                    <option>Россия</option>
+                    <option>Румыния</option>
+                    <option>Сербия</option>
+                    <option>Сингапур</option>
+                </select>
+            </p>
+            <p>Ваши хобби:
+                <label><input name="answer[]" type="checkbox">Спорт</label>
+                <label><input name="answer[]" type="checkbox">Путешествие</label>
+                <label><input name="answer[]" type="checkbox">Рыбалка</label>
+                <label><input name="answer[]" type="checkbox">Пение</label>
+            </p>
+            <p>
+                <strong><h2>Специальность</h2></strong>
+            </p>
+            <label for="prof">Желаемая должность</label>
+                <input id="prof" type="text" required placeholder="Должность">
+            <p>
+                Опыт работы: <label><input name="skils" type="radio">Есть опыт работы</label>
+                             <label><input name="skils" type="radio">Нет опыта работы</label>
+            </p>
+            <fieldset>
+                <legend>Занятость</legend>
+                <label><input name="answer2" type="checkbox" checked>Полная занятость</label></br>
+                <label><input name="answer2" type="checkbox">Частичная занятость</label></br>
+                <label><input name="answer2" type="checkbox" checked>Проектная занятость</label></br>
+                <label><input name="answer2" type="checkbox">Волонтерство</label></br>
+                <label><input name="answer2" type="checkbox">Стажировка</label>
+            </fieldset>
+            <fieldset>
+                <legend>График работы</legend>
+                <label><input name="answer3" type="checkbox" checked>Полный день</label></br>
+                <label><input name="answer3" type="checkbox">Сменный график</label></br>
+                <label><input name="answer3" type="checkbox">Гибкий график</label></br>
+                <label><input name="answer3" type="checkbox" checked>Удаленная работа</label></br>
+                <label><input name="answer3" type="checkbox">Вахтовый метод</label>
+            </fieldset>
+            <p>
+                <strong><h2>Зарплата</h2></strong>
+            </p>
+            <p>Желаемый уровень зарплаты:
+                <label><input name="answer" type="radio"><20000</label>
+                <label><input name="answer" type="radio"><50000</label>
+                <label><input name="answer" type="radio"><90000</label>
+                <label><input name="answer" type="radio"><150000</label>
+                <label><input name="answer" type="radio"><200000</label>
+            </p>
+            <p>
+                <label for="money">Текущий уровень зарплаты:</label>
+                <input id="money" type="range" min="10000" max="300000" value="50000">
+            </p>
+            <p>
+                <label for="money">Текущий уровень зарплаты:</label>
+                <input id="money" type="number" min="10000" max="300000" value="50000" step="5000">
+            </p>
+            <p>
+                <strong><h2>Опыт работы</h2></strong>
+            </p>
+            <p>
+            <label for="org">Название организации:</label>
+                <input id="org" type="text" placeholder="ООО Невский форум">
+            </p>
+            <p>
+                <label for="job">Ваша должность:</label>
+                <input id="job" type="text" placeholder="Head of IT and low-current network" required>
+            </p>
+            <p>
+                <label for="date2">Начало работы:</label>
+                    <input id="date2" type="datetime-local" min="2001-12-12T00:00" max="2008-03-08T00:00" value="2007-09-10T09:15">
+                <label><input type="checkbox">По настоящее время</label>
+            </p>
+            <p>
+                <label for="date3">Конец работы в данной организации:</label>
+                    <input id="date3" type="datetime-local" min="2008-12-12T00:00" max="2019-03-08T00:00" value="2009-04-25T09:15">
+            </p>
+            <p>
+            <label for="urlorg">URL организации https:// URL:</label>
+            <input id="urlorg" name="url" type="url" placeholder="https://example.com" pattern="https://.*">
+            </p>
+            <p>
+                <label for="orgwork">Сфера деятельности компании:</label>
+                <select id="orgwork" name="work">
+                    <option>Строительство</option>
+                    <option>Недвижимость</option>
+                    <option selected>Аренда</option>
+                    <option>Гостинечный</option>
+                    <option>Ресторанный</option>
+                </select>
+            </p>
+            <p>
+                <label for="logo">Логотип компании:</label>
+                <input id="logo" type="file" accept="image/*">
+            </p>
+            <p>
+                <label fot="color">Карпоративные цвета компании:</label>
+                <input id="color" type="color" value="#302bcc">
+                <input id="color" type="color" value="#8f9ab0">
+                <input id="color" type="color" value="#41bfb1">
+            </p>
+            <label for="opis">Обязанности на рабочем месте:</label></br>
+            <textarea id="opis" rows="20" cols="70"></textarea>
+            <p>
+                <input type="button" value="Сохранить и опубликовать">
+                <input type="reset" value="Очистить введенные данные">
+            </p>
+
+        </fieldset>
+    </form>
+</body>
+</html>
