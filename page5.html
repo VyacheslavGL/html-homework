@@ -2,33 +2,43 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>page4 Авторизация</title>
+    <title>page5 Регистрация</title>
 </head>
 <body>
-<div style="height: 50px">
-    <a href="page1.html">Страница 1</a>
-    <a href="page2.html">Страница 2</a>
-    <a href="page3.html">Страница 3</a>
-</div>
-<form>
-    <fieldset>
-        <legend>Регистрация</legend>
-        <p>
-            <label for="login">Введите логин</label>
-            <input id="login" type="text" required placeholder="Ввведите логин">
-        </p>
-        <p>
-            <label for="email">Введите email</label>
-            <input id="email" type="email" placeholder="Введите email" required>
-        </p>
-        <p>
-            <label for="password">Введите пароль</label>
-            <input type="password" placeholder="Введите пароль" minlength="5" required>
-        </p>
-        <p>
-            <input type="submit" value="Войти">
-        </p>
-    </fieldset>
-</form>
+    <div>
+        <h1>Навигация</h1>
+        <ol>
+            <li><a href="page1.html">Главная</a></li>
+            <li><a href="page2.html">Ссылки</a></li>
+            <li><a href="page3.html">Общая</a></li>
+            <li><a href="page4.html">Авторизация</a></li>
+            <li><a href="page5.html">Регистрация</a></li>
+        </ol>
+    </div>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Регистрация</legend>
+            <p>
+                <label for="login">Введите логин</label>
+                <input id="login" type="text" required placeholder="Ввведите логин">
+            </p>
+            <p>
+                <label for="email">Введите email</label>
+                <input id="email" type="email" placeholder="Введите email" required>
+            </p>
+            <p>
+                <label for="pwd">Введите пароль</label>
+                <input id="pwd" type="password" placeholder="Введите пароль" minlength="5" maxlength="10" required>
+            </p>
+            <p>
+                <label for="pwd2">Подтвердите пароль</label>
+                <input id="pwd2" type="password" placeholder="Повторите ввод пароля" minlength="5" maxlength="10" required>
+            </p>
+            <p>
+                <input type="submit" value="Войти">
+            </p>
+            <img src="images/online.jpg" width="300px">
+        </fieldset>
+    </form>
 </body>
 </html>
