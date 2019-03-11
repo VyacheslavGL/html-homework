@@ -5,6 +5,12 @@
     <title>Test form</title>
 </head>
 <body>
+        <p>
+            <a href="page4.html">Вход</a>
+            <a href="page5.html">Регистрация</a>
+            <a href="page4.html" target="_blank"><input type="image" id="reg1" alt="Кнопка входа" src="images/login.jpg" height="50px"></a>
+            <a href="page5.html"><input type="image" id="reg2" alt="Кнопка регистрации" src="images/reg.png" height="50px"></a>
+        </p>
     <form action="#" method="post" enctype="multipart/form-data">
         <fieldset>
             <legend>Создание резюме</legend>
@@ -14,9 +20,9 @@
                 <!--<label for="button">Заказать тезюме</label>-->
                 <a href="https://spb.hh.ru/article/expert_resume?from=resume_creation"><input id="button" type="button" value="Заказать резюме"></a>
             </p>
-            <p>
-                <strong><h2>Контактные данные</h2></strong>
-            </p>
+
+                <h2><strong>Контактные данные</strong></h2>
+
             <p>
                 <label for="name">Имя:</label>
                     <input id="name" type="text" placeholder="Иван" required>
@@ -52,7 +58,7 @@
                 </select>
             </p>
             <p>
-                <label fot="metro">Станция метро:</label>
+                <label for="metro">Станция метро:</label>
                     <select id="metro" name="select">
                         <option>Девяткино</option>
                         <option>Выборгская</option>
@@ -61,9 +67,9 @@
                         <option>Просвещения</option>
                     </select>
             </p>
-            <p>
-                <strong><h2>Оснавная информация</h2></strong>
-            </p>
+
+                <h2><strong>Оснавная информация</strong></h2>
+
             <label for="birthday">Дата рождения:</label>
             <input id="birthday" type="date">
             <p>
@@ -86,9 +92,9 @@
                 <label><input name="answer[]" type="checkbox">Рыбалка</label>
                 <label><input name="answer[]" type="checkbox">Пение</label>
             </p>
-            <p>
-                <strong><h2>Специальность</h2></strong>
-            </p>
+
+                <h2><strong>Специальность</strong></h2>
+
             <label for="prof">Желаемая должность</label>
                 <input id="prof" type="text" required placeholder="Должность">
             <p>
@@ -97,23 +103,23 @@
             </p>
             <fieldset>
                 <legend>Занятость</legend>
-                <label><input name="answer2" type="checkbox" checked>Полная занятость</label></br>
-                <label><input name="answer2" type="checkbox">Частичная занятость</label></br>
-                <label><input name="answer2" type="checkbox" checked>Проектная занятость</label></br>
-                <label><input name="answer2" type="checkbox">Волонтерство</label></br>
-                <label><input name="answer2" type="checkbox">Стажировка</label>
+                <p><label><input name="answer2" type="checkbox" checked>Полная занятость</label></p>
+                <p><label><input name="answer2" type="checkbox">Частичная занятость</label></p>
+                <p><label><input name="answer2" type="checkbox" checked>Проектная занятость</label></p>
+                <p><label><input name="answer2" type="checkbox">Волонтерство</label></p>
+                <p><label><input name="answer2" type="checkbox">Стажировка</label></p>
             </fieldset>
             <fieldset>
                 <legend>График работы</legend>
-                <label><input name="answer3" type="checkbox" checked>Полный день</label></br>
-                <label><input name="answer3" type="checkbox">Сменный график</label></br>
-                <label><input name="answer3" type="checkbox">Гибкий график</label></br>
-                <label><input name="answer3" type="checkbox" checked>Удаленная работа</label></br>
-                <label><input name="answer3" type="checkbox">Вахтовый метод</label>
+                <p><label><input name="answer3" type="checkbox" checked>Полный день</label></p>
+                <p><label><input name="answer3" type="checkbox">Сменный график</label></p>
+                <p><label><input name="answer3" type="checkbox">Гибкий график</label></p>
+                <p><label><input name="answer3" type="checkbox" checked>Удаленная работа</label></p>
+                <p><label><input name="answer3" type="checkbox">Вахтовый метод</label></p>
             </fieldset>
-            <p>
-                <strong><h2>Зарплата</h2></strong>
-            </p>
+
+                <h2><strong>Зарплата</strong></h2>
+
             <p>Желаемый уровень зарплаты:
                 <label><input name="answer" type="radio"><20000</label>
                 <label><input name="answer" type="radio"><50000</label>
@@ -122,16 +128,21 @@
                 <label><input name="answer" type="radio"><200000</label>
             </p>
             <p>
-                <label for="money">Текущий уровень зарплаты:</label>
-                <input id="money" type="range" min="10000" max="300000" value="50000">
+                <label for="mo">Текущий уровень зарплаты:</label>
+                <input id="mo" type="range" min="10000" max="300000" value="50000">
             </p>
             <p>
                 <label for="money">Текущий уровень зарплаты:</label>
                 <input id="money" type="number" min="10000" max="300000" value="50000" step="5000">
+                <select name="select2">
+                    <option value="Руб">Руб</option>
+                    <option value="EUR">EUR</option>
+                    <option value="USD">USD</option>
+                </select>
             </p>
-            <p>
-                <strong><h2>Опыт работы</h2></strong>
-            </p>
+
+                <h2><strong>Опыт работы</strong></h2>
+
             <p>
             <label for="org">Название организации:</label>
                 <input id="org" type="text" placeholder="ООО Невский форум">
@@ -168,12 +179,12 @@
                 <input id="logo" type="file" accept="image/*">
             </p>
             <p>
-                <label fot="color">Карпоративные цвета компании:</label>
+                <label for="color">Карпоративные цвета компании:</label>
                 <input id="color" type="color" value="#302bcc">
-                <input id="color" type="color" value="#8f9ab0">
-                <input id="color" type="color" value="#41bfb1">
+                <input type="color" value="#8f9ab0">
+                <input type="color" value="#41bfb1">
             </p>
-            <label for="opis">Обязанности на рабочем месте:</label></br>
+            <p><label for="opis">Обязанности на рабочем месте:</label></p>
             <textarea id="opis" rows="20" cols="70"></textarea>
             <p>
                 <input type="button" value="Сохранить и опубликовать">
