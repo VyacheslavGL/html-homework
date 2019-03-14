@@ -1,0 +1,132 @@
+body {
+    margin-left: 20%;
+    /*Как правильно рассчитывать эти величины?*/
+    margin-right: 10%;
+    max-width: 1200px;
+    padding: 0px;
+    font-size: 20px;
+    background-image: url("../images/26.jpg");
+    background-position: center;
+    background-attachment: fixed;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 100px;
+}
+
+h2 {
+    height: 100%;
+    margin-bottom: 30px;
+    margin-top: 70px;
+}
+
+h3 {
+    height: 15px;
+    margin-top: 20px;
+}
+
+div {
+    width: 98%;
+}
+
+a {
+    text-decoration: none;
+}
+
+p>a {
+    border: 1px solid blue;
+    background: sandybrown;
+    display: inline-block;
+    width: 150px;
+    height: 30px;
+    text-align: center;
+    padding-top: 5px;
+    border-radius: 10px;
+}
+
+.article {
+    height: 100px;
+}
+
+ul {
+    text-align: right;
+}
+
+ul li {
+    list-style-type: none;
+    display: inline-block;
+    width: auto;
+    height: auto;
+    margin-top: 5px;
+    background: rebeccapurple;
+}
+
+li>a {
+    border: 1px solid blanchedalmond;
+    text-align: center;
+    display: block;
+    width: 100px;
+    height: 30px;
+    padding: 10px;
+    background: aqua;
+}
+
+.img {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.autor {
+    color: red;
+}
+
+a:active {
+    color: aquamarine;
+}
+
+.datetime {
+    border: none;
+    background: none;
+}
+
+#footer {
+    background: wheat;
+    height: 170px;
+}
+
+#call {
+    text-align: center;
+    padding-top: 10px;
+}
+
+#tel {
+    display: inline-block;
+    margin: 15px;
+    width: 200px;
+    height: 40px;
+    padding-top: 15px;
+    text-align: center;
+}
+
+#img2 {
+    display: inline-block;
+    margin: 15px;
+    width: 500px;
+    height: 70px;
+    padding: 10px;
+    border-left: 170px;
+    text-align: center;
+}
+
+.netimg {
+    display: inline-block;
+    width: 50px;
+    margin: 5px;
+}
