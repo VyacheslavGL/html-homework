@@ -1,0 +1,109 @@
+body{
+    margin: 0 auto;
+    height: 3000px;
+    max-width: 960px;
+}
+.header, .slider, .tab1, .tab2, .tab3, .tab4, .tab5, .tab6{
+    border: 1px solid black;
+    margin: 5px;
+}
+.header, .tab1, .tab2, .tab3, .tab4, .tab5, .tab6, .head{
+    text-align: center;
+}
+
+.header {
+    grid-area: header;
+    background: bisque;
+    position: fixed;
+    top: auto;
+    width: 948px;
+    z-index: 2;
+}
+
+.head{
+    list-style-type: none;
+    margin: 10px;
+    /*background: greenyellow;*/
+
+}
+.nav1{
+    margin: 0 10px;
+}
+.head li{
+    display: inline-block
+}
+
+.slider{
+    grid-area: slider;
+    background: burlywood;
+}
+
+.tab1{
+    grid-area: tab1;
+    background: aquamarine;
+}
+
+.tab2{
+    grid-area: tab2;
+    background: aquamarine;
+}
+
+.tab3{
+    grid-area: tab3;
+    background: aquamarine;
+}
+
+.tab4{
+    grid-area: tab4;
+    background: aquamarine;
+}
+
+.tab5{
+    grid-area: tab5;
+    background: aquamarine;
+}
+
+.tab6{
+    grid-area: tab6;
+    background: aquamarine;
+}
+
+.absolut{
+    position: relative;
+    top: 10%;
+    left: 7%;
+}
+
+.absolut2{
+    position: relative;
+    top: 55%;
+    left: 37%;
+}
+
+.container{
+    display: grid;
+    grid-template-areas:    "header header header"
+                            "slider slider slider"
+                            "tab1 tab2 tab3"
+                            "tab4 tab4 tab3"
+                            "tab5 tab6 tab3";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50px 400px 150px 150px 150px;
+    min-height: 100vh;
+}
+
+@media screen and (max-width: 600px){
+    .container{
+        grid-template-areas: "header"
+                             "slider"
+                             "tab1"
+                             "tab2"
+                             "tab3"
+                             "tab4"
+                             "tab5"
+                             "tab6";
+        grid-template-columns: 100%;
+        grid-template-rows: 50px 400px 150px 150px 450px 150px 150px 150px;
+    }
+
+}
