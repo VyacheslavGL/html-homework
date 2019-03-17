@@ -1,0 +1,97 @@
+.row:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden; /**/
+    background: yellow;
+}
+
+[class*=col-] {
+    float: left;
+    padding: 0;
+}
+
+.slaider{
+    padding: 0px;
+    margin: 0 0 30px;
+    background: bisque;
+    list-style-type: none;
+    
+}
+.slaider li{
+    display: none;
+}
+.slaider li.active {
+    display: block;
+    text-align: center;
+}
+
+.container{
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+div{
+    box-sizing: border-box;
+    /*border: 1px solid black;*/
+}
+
+.col-4 {
+    width: 33.333%;
+}
+
+.col-5 {
+    width: 41.667%;
+}
+
+.col-6 {
+    width: 50%;
+    
+}
+
+.col-8 {
+    width: 66.667%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+.test, .test2{
+    width: auto;
+    background: yellow;
+    margin: 5px;
+    border: 1px solid black;
+}
+
+.test{
+    height: 200px;
+}
+
+.test2{
+    height: 620px;
+}
+
+ul{
+    text-align: center;
+}
+
+.type{
+    list-style-type: none; 
+    display: inline-block;
+    margin: 5px;
+}
+
+.type a{
+    display: block;
+    text-decoration: none;
+    border: 1px solid black;
+    padding: 15px;
+    width: 100px;
+}
+
+img{
+    max-width: 100%;
+}
+
